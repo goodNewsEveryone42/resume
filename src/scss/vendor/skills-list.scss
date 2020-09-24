@@ -1,0 +1,76 @@
+.skills-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__item {
+		font-weight: 500;
+		font-size: 12px;
+		flex-basis: 23%;
+		margin-bottom: 46px;
+
+		label {
+			position: relative;
+			margin-left: 27px;
+			text-transform: uppercase;
+			cursor: pointer;
+
+
+
+			&:hover {
+				color: #0093d7;
+				transition: 0.5s;
+			}
+		}
+
+		svg {
+			position: absolute;
+			left: -26px;
+			top: -3px;
+			width: 19px;
+			height: 19px;
+			fill: #eeeeee;
+			cursor: pointer;
+		}
+
+		input:checked + label svg {
+			fill: #0093d7;
+			animation: pulse 1s cubic-bezier(0.15, 0.8, 0.5, 1);
+		}
+
+		input:checked + label::after {
+			content: "";
+			position: absolute;
+			left: -23px;
+			top: 0px;
+			width: 23px;
+			height: 23px;
+			background-image: url("../images/sprites/svg/checked-checkbox.svg");
+			background-position: 0 0;
+			background-repeat: no-repeat;
+		}
+	}
+
+	@include mobile {
+		width: 100%;
+		background-size: auto auto;
+
+		&__item {
+			flex-basis: 33%;
+			margin-bottom: 25px;
+		}
+	}
+
+	@keyframes pulse {
+		0% {
+			border-radius: 80%;
+			box-shadow: 0 0 0 0px rgba(#0093d7, 1);
+		}
+
+		50% {
+			box-shadow: 0 0 0 25px rgba(242,242,242, 0);
+		}
+	}
+}
+
+

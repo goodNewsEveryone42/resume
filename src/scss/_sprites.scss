@@ -1,0 +1,68 @@
+$sprites: (
+	"approved": (
+		normal: (
+			x: 662,
+			y: 0,
+			width: 184,
+			height: 166,
+			image: "sprites.png",
+			total_width: 846,
+			total_height: 502,
+		),
+		retina: (
+			x: 1324,
+			y: 0,
+			width: 368,
+			height: 332,
+			image: "sprites@2x.png",
+			total_width: 1692,
+			total_height: 1004,
+		),
+	),
+	"background-section-down": (
+		normal: (
+			x: 0,
+			y: 0,
+			width: 660,
+			height: 250,
+			image: "sprites.png",
+			total_width: 846,
+			total_height: 502,
+		),
+		retina: (
+			x: 0,
+			y: 0,
+			width: 1320,
+			height: 500,
+			image: "sprites@2x.png",
+			total_width: 1692,
+			total_height: 1004,
+		),
+	),
+	"background-section": (
+		normal: (
+			x: 0,
+			y: 252,
+			width: 660,
+			height: 250,
+			image: "sprites.png",
+			total_width: 846,
+			total_height: 502,
+		),
+		retina: (
+			x: 0,
+			y: 504,
+			width: 1320,
+			height: 500,
+			image: "sprites@2x.png",
+			total_width: 1692,
+			total_height: 1004,
+		),
+	),
+);
+
+@each $name in map-keys($sprites) {
+	.sprite-#{$name} {
+		@include sprite($name);
+	}
+}

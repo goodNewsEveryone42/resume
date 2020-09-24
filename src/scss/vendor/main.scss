@@ -1,0 +1,15 @@
+.main {
+	width: 660px;
+	margin: 0 auto;
+	margin-top: 60px;
+
+	@include mobile-xl {
+		width: 100%;
+		margin-top: 0;
+	}
+
+	@include mobile {
+		width: 100%;
+		margin-top: 0;
+	}
+}

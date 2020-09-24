@@ -1,0 +1,35 @@
+.counter {
+	display: flex;
+	flex-direction: column;
+	margin-top: 13px;
+	width: 48%;
+
+	&__title {
+		margin-bottom: 8px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	&__value {
+		border: none;
+		width: 140px;
+		font-weight: 900;
+		font-size: 50px;
+		color: #0093d7;
+		background-color: transparent;
+	}
+
+	@include mobile-xl {
+		width: 43%;
+	}
+
+	@include mobile {
+		align-items: center;
+		width: 100%;
+
+		br {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.skills-inputs {
+	border-bottom: 2px solid #f0f0f0;
+	@include sprite("background-section");
+
+	.skills-inputs__title {
+		margin-top: 34px;
+		margin-bottom: 26px;
+	}
+
+	@include mobile-xl {
+		width: 100%;
+	}
+
+	@include mobile {
+		width: 100%;
+		background-size: auto auto;
+	}
+}

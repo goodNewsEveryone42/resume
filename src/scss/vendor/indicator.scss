@@ -1,0 +1,35 @@
+.indicator {
+	position: relative;
+	width: 255px;
+	height: 135px;
+
+	&__shape {
+		position: absolute;
+		bottom: 0;
+		width: 85px;
+		height: 104px;
+
+	}
+
+	&__green {
+		left: 21.5%;
+		top: 4%;
+		width: 145px;
+		height: 67px;
+	}
+
+	&__blue {
+		right: 0;
+	}
+
+	&__arrow {
+		position: absolute;
+		left: 30%;
+		bottom: -5%;
+		width: 60px;
+		height: 41px;
+		transform-origin: 80% 75%;
+		transition: transform 0.8s;
+	}
+}
+

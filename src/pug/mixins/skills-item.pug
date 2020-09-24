@@ -1,0 +1,5 @@
+mixin skills-item(name, checked)
+	li.skills-list__item
+		input(class="visually-hidden" type="checkbox" name=name id=name checked=checked)
+		label(for=name) #{name}
+			+svg("empty-checkbox")

@@ -1,0 +1,12 @@
+extends pug/base
+
+prepend vars
+	- title = 'Тестовое задание'
+
+append vars
+	//-
+
+block content
+	main.main
+		include pug/about-me
+		include pug/skills-widget

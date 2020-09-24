@@ -1,0 +1,14 @@
+section.skills-inputs
+	.container
+		h3.skills-inputs__title
+			| Навыки
+		form(name="formSkills")
+			-
+				var inputs = {"html5": "checked", "sass": "checked", "vanillajs":"checked",
+							"git": "checked", "css3": "checked", "less": "checked",
+							"angular": false, "foundation": false, "бэм": "checked",
+							"gulp": "checked", "jquery": false, "bootstrap": false}
+
+			ul.skills-list
+				each val, key in inputs
+					+skills-item(key, val)

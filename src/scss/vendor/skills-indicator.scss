@@ -1,0 +1,27 @@
+.skills-indicator {
+	@include sprite("background-section-down");
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 53px;
+		width: 100%;
+	}
+
+	@include mobile-xl {
+		width: 100%;
+	}
+
+	@include mobile {
+		width: 100%;
+		height: auto;
+		background-size: auto auto;
+
+
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+			margin-top: 5px;
+		}
+	}
+}
